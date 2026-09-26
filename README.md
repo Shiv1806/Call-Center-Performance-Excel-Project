@@ -13,7 +13,7 @@ The workbook combines structured data preparation, Excel formulas, PivotTables, 
 - Which days of the week have the highest/lowest call activity?
 - How are calls distributed across sales representatives?
 - How does purchase amount compare across representatives?
-- How do customer ratings and satisfaction behave?
+- How do customer ratings and call duration are related?
 - How does caller gender vary by city?
 - Which representative is selected and how does their activity compare with the wider group?
 - How can an interactive dashboard be used to explore representative performance?
@@ -34,11 +34,11 @@ Key fields include:
 - Date of Call
 - Purchase Amount
 - Satisfaction Rating
-- FY
-- Day of week
-- Duration Bucket
-- Rating rounded
-- Customer ID
+- FY (Calculated Column)
+- Day of week (Calculated Column)
+- Duration Bucket (Calculated Column)
+- Rating rounded (Calculated Column)
+- Customer ID 
 - Gender
 - Age
 - City
@@ -54,7 +54,7 @@ Analyses include:
 - Representative call performance
 - Representative amount performance
 - Representative summaries
-- Satisfaction / rating distribution
+- Call Duration/rating distribution
 - City × gender analysis
 - Customer × representative amount matrix
 - Selected-representative metrics
@@ -75,7 +75,7 @@ Supporting representative image / lookup area used by the dashboard design.
 
 ## Dashboard Visuals
 
-The dashboard contains **6 charts**:
+The dashboard contains **6 charts** and **1 Pivot Table**:
 
 1. **Calls Trend By Months** — monthly call-volume trend.
 2. **Call Trends By Week-Days** — comparison of calls across weekdays.
@@ -83,6 +83,7 @@ The dashboard contains **6 charts**:
 4. **Ratings** — distribution of rounded customer satisfaction ratings.
 5. **Calls** — representative-level call comparison.
 6. **Amount** — representative-level purchase amount comparison.
+7.  **Pivot Table**- Highlights a particular representative as per city and customers served.
 
 The dashboard also includes KPI cards for:
 
@@ -186,7 +187,6 @@ The project also applies modern Excel functions and spill-style calculations dur
 - `XLOOKUP`
 - `CHOOSECOLS`
 - `COUNTIFS`
-- `MEDIAN`
 
 These techniques were used for Top/Bottom analysis, filtered results, unique lists, lookups and representative-level summaries.
 
@@ -256,7 +256,7 @@ This project is designed to demonstrate more than basic spreadsheet work. It sho
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard_Call_Center.png)
 
 ### PivotTables
 
@@ -273,7 +273,7 @@ This project is designed to demonstrate more than basic spreadsheet work. It sho
 - `Call_Center_Performance_Analysis.xlsx` — complete Excel project workbook.
 - `PROJECT_DETAILS.md` — detailed project description and analytical components.
 - `FORMULAS_AND_METHODS.md` — key formulas and Excel techniques used.
-- `screenshots/` — visual previews for the GitHub README.
+- `screenshots/` — visual previews.
 
 ---
 
