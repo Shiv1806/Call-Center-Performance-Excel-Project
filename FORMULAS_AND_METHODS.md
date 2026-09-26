@@ -60,13 +60,7 @@ Amount rank:
 =RANK.AVG(K34,O33:O37)
 ```
 
-## Modern Excel Techniques Used During the Project
-
-### Unique list
-
-```excel
-=UNIQUE(E2:E261)
-```
+## Excel Techniques Used During the Project
 
 ### Top 5
 
@@ -83,14 +77,15 @@ Amount rank:
 ### Filtered result
 
 ```excel
-=IF(E34=$C$54,F34,NA())---- This will show the representative image, call and amount data only if single slicer button is selected, else no result will be
-                            displayed.
+=IF(E34=$C$54,F34,NA())---- This will show the representative image, call and amount data only if single slicer button is selected,
+                            else no result will be displayed.
 ```
 
 ### Conditional Highlighting
 
 ```excel
-=N$3='Pivot Tables'!$E$67--- This will highlight a column in the pivot table according to the selected representative on the slicer.
+=N$3='Pivot Tables'!$E$67--- This will highlight a column in the pivot table according to the selected
+                             representative on the slicer.
 ```
 
 ### Customise the size of data bars.
