@@ -77,8 +77,8 @@ Amount rank:
 ### Filtered result
 
 ```excel
-=IF(E34=$C$54,F34,NA())---- This will show the representative image, call and amount data only if single slicer button is selected,
-                            else no result will be displayed.
+=IF(E34=$C$54,F34,NA())---- This will show the representative image, call and amount data only if single slicer button
+                            is selected,else no result will be displayed.
 ```
 
 ### Conditional Highlighting
@@ -91,7 +91,8 @@ Amount rank:
 ### Customise the size of data bars.
 
 ```excel
-=MAX('Dashboard Customer Care Center'!$N$5:$R$21)*2---- scale down the size of data bars according to maximum value in the range. Makes the data more readable.
+=MAX('Dashboard Customer Care Center'!$N$5:$R$21)*2---- scale down the size of data bars according to
+                                                        maximum value in the range. Makes the data more readable.
 ```
 
 ## Design Method
