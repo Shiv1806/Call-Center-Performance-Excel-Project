@@ -83,19 +83,20 @@ Amount rank:
 ### Filtered result
 
 ```excel
-=FILTER(Staff[[First Name]:[Start Date]],(WEEKDAY(Staff[Start Date])=2)*(Staff[Gender]="Female"))
+=IF(E34=$C$54,F34,NA())---- This will show the representative image, call and amount data only if single slicer button is selected, else no result will be
+                            displayed.
 ```
 
-### Conditional counting
+### Conditional Highlighting
 
 ```excel
-=COUNTIFS(Staff[Department],A2,Staff[Gender],"Female")
+=N$3='Pivot Tables'!$E$67--- This will highlight a column in the pivot table according to the selected representative on the slicer.
 ```
 
-### Median by department
+### Customise the size of data bars.
 
 ```excel
-=MEDIAN(FILTER(Staff[Salary],Staff[Department]=P32))
+=MAX('Dashboard Customer Care Center'!$N$5:$R$21)*2---- scale down the size of data bars according to maximum value in the range. Makes the data more readable.
 ```
 
 ## Design Method
